@@ -12,12 +12,12 @@ address["pincode"] = "227807"
 print(address)
 if "fname" not in address.keys():
 	address["fname"] = "Ashish"
-print(list(address.keys()))
-print(list(address.values()))
-print(list(address.items()))
+print(list(address.keys()))		#Keys Object
+print(list(address.values()))		#Value Objects
+print(list(address.items()))		#Items Objects
 for k,v in address.items():
 	print(k + v)
-i = address.pop("fname")
+i = address.pop("fname")		#pop will delete the value and return the corresponding value
 v = address["fname"]
 #print(help(address.pop))
 print(i)
